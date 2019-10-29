@@ -15,3 +15,8 @@
 - send message via intent.
 - recieve text via intent.
 
+# Lecture 4
+- Implemented stopwatch with maintaining activity life cycle.
+- saved instance state on rotate screen.
+- Used handler.
+

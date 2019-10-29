@@ -3,4 +3,8 @@
     <string name="buttonLecture2">Lecture 2</string>
     <string name="buttonLecture3">Lecture 3</string>
     <string name="buttonSend">Send</string>
+    <string name="buttonLecture4">Lecture 4</string>
+    <string name="buttonStart">Start</string>
+    <string name="buttonStop">Stop</string>
+    <string name="buttonReset">Reset</string>
 </resources>
