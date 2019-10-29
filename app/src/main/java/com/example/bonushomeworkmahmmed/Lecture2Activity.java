@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class Lecture2Activity extends AppCompatActivity {
     private static int count  = 0;
 
     @Override
