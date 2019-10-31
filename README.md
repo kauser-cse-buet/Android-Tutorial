@@ -20,3 +20,6 @@
 - saved instance state on rotate screen.
 - Used handler.
 
+# Lecture 5
+-
+
