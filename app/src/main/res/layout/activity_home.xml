@@ -41,5 +41,12 @@
             android:layout_height="wrap_content"
             android:text="@string/buttonLecture5"
             android:onClick="onClickLecture5Button"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonLecture6"
+            android:onClick="onClickLecture6Button"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

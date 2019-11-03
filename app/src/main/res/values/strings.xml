@@ -12,6 +12,7 @@
     <string name="editTextTo">To</string>
     <string name="buttonSendLecture5">Send</string>
     <string name="textviewScroll">this is a test string for scrollview. This is just some texts. nothing else.</string>
+    <string name="buttonLecture6">Lecture 6</string>
 
     <string-array name="market_items">
         <item>milk</item>
