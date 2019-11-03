@@ -95,13 +95,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onClickRadioGroup">
+                >
 
                 <RadioButton
                     android:id="@+id/radioButtonChoice1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Choice 1" />
+                    android:text="Choice 1"
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/radioButtonChoice2"
@@ -110,6 +111,13 @@
                     android:text="Choice 2" />
             </RadioGroup>
 
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/market_items"
+                />
 
             <Button
                 android:id="@+id/button5"
@@ -119,7 +127,26 @@
                 android:height="0dp"
                 android:text="@string/buttonSendLecture5" />
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textviewScroll" />
+
+                </LinearLayout>
+            </ScrollView>
+
 
         </LinearLayout>
+
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

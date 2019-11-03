@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -17,6 +19,32 @@ public class Lecture5Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecture5);
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        final RadioGroup radio_group = (RadioGroup) findViewById(R.id.radio_group);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(adapterView.getContext(), adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        radio_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton checkedRadioButton = (RadioButton) findViewById(radio_group.getCheckedRadioButtonId());
+
+                Toast.makeText(radioGroup.getContext(), checkedRadioButton.getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
     }
 
 
@@ -53,20 +81,5 @@ public class Lecture5Activity extends AppCompatActivity {
         else{
             Toast.makeText(this, "Not accepted", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    public void onClickRadioGroup(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
-        int id = radioGroup.getCheckedRadioButtonId();
-
-        if(id == -1){
-            Toast.makeText(this, "No item is selected", Toast.LENGTH_SHORT).show();
-        }
-        else {
-            RadioButton radioButtonChecked = (RadioButton) findViewById(id);
-            Toast.makeText(this, "Options" + radioButtonChecked.getText(), Toast.LENGTH_SHORT).show();
-        }
-
-
     }
 }

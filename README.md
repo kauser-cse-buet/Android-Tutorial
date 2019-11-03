@@ -27,4 +27,6 @@
 - Used linear layout inside frame layout with image. 
 - use the following gui element: toggle button, 
 - use toast
+- use scrollview. 
+
 
