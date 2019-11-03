@@ -39,6 +39,7 @@
             android:id="@+id/buttonLecture5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonLecture5" />
+            android:text="@string/buttonLecture5"
+            android:onClick="onClickLecture5Button"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

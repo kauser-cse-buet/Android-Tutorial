@@ -8,4 +8,7 @@
     <string name="buttonStop">Stop</string>
     <string name="buttonReset">Reset</string>
     <string name="buttonLecture5">Lecture 5</string>
+    <string name="editTextMessage">Message</string>
+    <string name="editTextTo">To</string>
+    <string name="buttonSendLecture5">Send</string>
 </resources>

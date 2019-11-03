@@ -21,5 +21,10 @@
 - Used handler.
 
 # Lecture 5
--
+- use weight property on linear layout
+- use gravity attribute 
+- frame layout 
+- Used linear layout inside frame layout with image. 
+- use the following gui element: toggle button, 
+- use toast
 
