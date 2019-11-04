@@ -4,19 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lecture6Activity">
+    tools:context=".DrinkCategoryActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="306dp"
-        tools:layout_editor_absoluteY="201dp">
+        android:orientation="vertical">
 
         <ListView
-            android:id="@+id/lecture6_listview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/top_level_options"/>
+            android:layout_height="match_parent"
+            android:id="@+id/drink_list"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

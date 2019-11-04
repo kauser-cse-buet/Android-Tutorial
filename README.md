@@ -30,4 +30,13 @@
 - use scrollview. 
 
 # Lecture 6
+- create a class
+- add listview 
+- add item click listener. 
+- add array list adapter. 
+- add drink list,drink details.
+- show list of drink. 
+- Click each drink to show drink details containg image, name and description.
+
+
 

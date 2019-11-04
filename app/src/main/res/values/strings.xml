@@ -19,4 +19,10 @@
         <item>bread</item>
         <item>egg</item>
     </string-array>
+
+    <string-array name="top_level_options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
 </resources>
