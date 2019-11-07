@@ -46,5 +46,8 @@
 - add back button. 
 - add share action.
 
+# Lecture 8
+- 
+
 
 
