@@ -38,5 +38,12 @@
 - show list of drink. 
 - Click each drink to show drink details containg image, name and description.
 
+# Lecture 7
+- change app theme to theme.AppCompat
+- add app bar.
+- add an action to appbar. 
+- add custom toolbar.
+- 
+
 
 

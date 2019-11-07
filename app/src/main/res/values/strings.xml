@@ -25,4 +25,6 @@
         <item>Food</item>
         <item>Stores</item>
     </string-array>
+
+    <string name="create_order">Create Order</string>
 </resources>

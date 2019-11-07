@@ -1,10 +1,14 @@
 package com.example.bonushomeworkmahmmed;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import androidx.appcompat.widget.Toolbar;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -12,6 +16,9 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     public void onClickLecture2Button(View view){
@@ -37,5 +44,22 @@ public class HomeActivity extends AppCompatActivity {
     public void onClickLecture6Button(View view) {
         Intent intent = new Intent(this, Lecture6Activity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_create_order:
+                Intent intent = new Intent(this, OrderActivity.class);
+                startActivity(intent);
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

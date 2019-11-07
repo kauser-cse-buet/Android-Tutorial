@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,20 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="191dp"
         tools:layout_editor_absoluteY="181dp">
 
+        <include
+            layout="@layout/toolbar_main"
+            android:id="@+id/toolbar" />
+
         <Button
             android:id="@+id/buttonLecture2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonLecture2"
             android:onClick="onClickLecture2Button"
-            />
+            android:text="@string/buttonLecture2" />
 
         <Button
             android:id="@+id/buttonLecture3"
@@ -32,21 +39,22 @@
             android:id="@+id/buttonLecture4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonLecture4"
-            android:onClick="onClickLecture4Button"/>
+            android:onClick="onClickLecture4Button"
+            android:text="@string/buttonLecture4" />
 
         <Button
             android:id="@+id/buttonLecture5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonLecture5"
-            android:onClick="onClickLecture5Button"/>
+            android:onClick="onClickLecture5Button"
+            android:text="@string/buttonLecture5" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonLecture6"
-            android:onClick="onClickLecture6Button"/>
+            android:onClick="onClickLecture6Button"
+            android:text="@string/buttonLecture6" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

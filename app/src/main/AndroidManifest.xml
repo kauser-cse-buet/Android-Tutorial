@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DrinkActivity"></activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/create_order"></activity>
+        <activity android:name=".DrinkActivity" />
         <activity android:name=".DrinkCategoryActivity" />
         <activity android:name=".Lecture6Activity" />
         <activity android:name=".Lecture5Activity" />
