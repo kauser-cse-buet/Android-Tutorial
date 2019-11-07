@@ -8,9 +8,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import androidx.appcompat.widget.ShareActionProvider;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuItemCompat;
 
 public class HomeActivity extends AppCompatActivity {
+
+    private ShareActionProvider shareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +54,19 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+        MenuItem menuItem = menu.findItem(R.id.action_share);
+//        shareActionProvider = (ShareActionProvider) MenuItem
+        shareActionProvider = (ShareActionProvider)MenuItemCompat.getActionProvider(menuItem);
+        setShareActionIntent("Want to join me for a pizza?");
+
         return super.onCreateOptionsMenu(menu);
+    }
+
+    private void setShareActionIntent(String s) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, s);
+        shareActionProvider.setShareIntent(intent);
     }
 
     @Override

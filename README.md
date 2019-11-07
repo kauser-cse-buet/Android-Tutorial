@@ -43,7 +43,8 @@
 - add app bar.
 - add an action to appbar. 
 - add custom toolbar.
-- 
+- add back button. 
+- add share action.
 
 
 

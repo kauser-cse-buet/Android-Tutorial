@@ -11,7 +11,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".OrderActivity"
-            android:label="@string/create_order"></activity>
+            android:label="@string/create_order_title"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
         <activity android:name=".DrinkActivity" />
         <activity android:name=".DrinkCategoryActivity" />
         <activity android:name=".Lecture6Activity" />
