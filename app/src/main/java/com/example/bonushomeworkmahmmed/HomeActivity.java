@@ -79,4 +79,9 @@ public class HomeActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    public void onClickLecture8Button(View view) {
+        Intent intent = new Intent(this, Lecture8Activity.class);
+        startActivity(intent);
+    }
 }
