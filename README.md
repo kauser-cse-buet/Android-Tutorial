@@ -47,7 +47,9 @@
 - add share action.
 
 # Lecture 8
-- 
+- Add a fragment.
+- Show fragment inside activity.
+-
 
 
 
