@@ -50,11 +50,18 @@
             android:text="@string/buttonLecture5" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonLecture6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickLecture6Button"
             android:text="@string/buttonLecture6" />
+
+        <Button
+            android:id="@+id/buttonLecture8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLecture8Button"
+            android:text="@string/buttonLecture8" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
