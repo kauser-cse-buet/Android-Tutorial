@@ -17,7 +17,7 @@ import android.widget.TextView;
 public class WorkDetailFragment extends Fragment {
 
 
-    private int workoutId = 1;
+    private int workoutId;
 
     public WorkDetailFragment() {
         // Required empty public constructor
@@ -42,5 +42,9 @@ public class WorkDetailFragment extends Fragment {
             name.setText(workout.getName());
             description.setText(workout.getDescription());
         }
+    }
+
+    public void setWorkoutId(int workoutId) {
+        this.workoutId = workoutId;
     }
 }

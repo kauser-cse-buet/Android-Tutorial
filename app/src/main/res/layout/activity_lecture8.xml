@@ -5,12 +5,5 @@
     android:name="com.example.bonushomeworkmahmmed.WorkoutListFragment"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <fragment
 
-        android:id="@+id/detail_fragment"
-        android:name="com.example.bonushomeworkmahmmed.WorkDetailFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </fragment>
 </fragment>

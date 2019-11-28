@@ -50,6 +50,7 @@
 - Add a fragment.
 - Show fragment inside activity.
 - Add a detail fragment.
+- coordinating between fragment.
 
 
 

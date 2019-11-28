@@ -3,7 +3,6 @@ package com.example.bonushomeworkmahmmed;
 public class Workout {
     private String name;
     private String description;
-    private long workoutId;
 
     public static final Workout[] workouts = {
             new Workout("The Limb Loosener", "Stretches and Stuff"),
@@ -23,10 +22,6 @@ public class Workout {
 
     public String getDescription() {
         return description;
-    }
-
-    public void setWorkoutId(long workoutId) {
-        this.workoutId = workoutId;
     }
 
     public String toString(){
