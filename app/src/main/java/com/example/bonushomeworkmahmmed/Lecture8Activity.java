@@ -10,5 +10,7 @@ public class Lecture8Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecture8);
+
+        WorkDetailFragment frag = (WorkDetailFragment) getSupportFragmentManager().findFragmentById(R.id.detail_fragment);
     }
 }

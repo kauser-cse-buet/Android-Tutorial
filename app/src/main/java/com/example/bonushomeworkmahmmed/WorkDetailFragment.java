@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -15,6 +16,8 @@ import android.view.ViewGroup;
  */
 public class WorkDetailFragment extends Fragment {
 
+
+    private int workoutId = 1;
 
     public WorkDetailFragment() {
         // Required empty public constructor
@@ -28,4 +31,16 @@ public class WorkDetailFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_work_detail, container, false);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        View view = getView();
+        if(view != null){
+            TextView name = (TextView) view.findViewById(R.id.textWorkoutTitle);
+            TextView description = (TextView) view.findViewById(R.id.textWorkoutDescription);
+            Workout workout = Workout.workouts[workoutId];
+            name.setText(workout.getName());
+            description.setText(workout.getDescription());
+        }
+    }
 }
