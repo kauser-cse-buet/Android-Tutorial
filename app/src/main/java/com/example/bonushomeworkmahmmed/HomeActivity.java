@@ -84,4 +84,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Lecture8Activity.class);
         startActivity(intent);
     }
+
+    public void onClickLecture10Button(View view) {
+        Intent intent = new Intent(this, Lecture10Activity.class);
+        startActivity(intent);
+    }
 }
