@@ -56,6 +56,7 @@
 
 # Lecture 10
 - Implemented swipe and tab using fragment.
+- Implemented scrolling toolbar.
 
 
 
