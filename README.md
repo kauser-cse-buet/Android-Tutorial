@@ -54,4 +54,9 @@
 
 # Lecture 9
 
+# Lecture 10
+- Implemented swipe and tab using fragment.
+
+
+
 
