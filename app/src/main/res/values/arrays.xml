@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pizzas">
+        <item>Vegetable Pizza</item>
+        <item>Chicken Pizza</item>
+        <item>Beef Pizza</item>
+    </string-array>
+    <string-array name="pastas">
+        <item>Vegetable Pasta</item>
+        <item>Chicken Pasta</item>
+    </string-array>
+    <string-array name="stores">
+        <item>Dominos</item>
+        <item>Reginelli Pizzeria</item>
+    </string-array>
+</resources>
