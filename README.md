@@ -65,6 +65,7 @@
 - Implemented cardview
 - implemented adapter.
 - implemented recyclerview.
+- implemented responsive recyclerview.
 
 
 
