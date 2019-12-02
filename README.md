@@ -61,6 +61,10 @@
 - Implemented floating actionbar
 - Implemented snackbar on Order.
 
+# Lecture 11
+- Implemented cardview
+- implemented adapter.
+- implemented recyclerview.
 
 
 
