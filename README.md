@@ -59,6 +59,7 @@
 - Implemented scrolling toolbar.
 - Implement collapsing scrollbar on Order activity. Please press the + button on main menu to place an order.
 - Implemented floating actionbar
+- Implemented snackbar on Order.
 
 
 
