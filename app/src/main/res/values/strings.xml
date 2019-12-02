@@ -44,4 +44,6 @@
     <string name="top_fragment_text">Welcome Home!</string>
     <string name="restaurant_image">Restaurant image collected from CNN site</string>
     <string name="lecture10_app_name">FoodyBuddy</string>
+    <string name="order_name_hint">Please add order name</string>
+    <string name="order_details_hint">Please add order details</string>
 </resources>
