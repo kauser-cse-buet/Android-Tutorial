@@ -54,6 +54,7 @@
 
 # Lecture 9
 - Implemented support for different layout for different devices (tablet, phone).
+- Implemented dynamic fragment in lecture 8,9 layout, i.e. workout activity.
 
 # Lecture 10
 - Implemented swipe and tab using fragment.
