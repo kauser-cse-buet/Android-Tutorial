@@ -51,6 +51,7 @@
 - Show fragment inside activity.
 - Add a detail fragment.
 - coordinating between fragment.
+- Implemented list fragment.
 
 # Lecture 9
 - Implemented support for different layout for different devices (tablet, phone).
