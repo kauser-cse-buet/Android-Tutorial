@@ -3,6 +3,8 @@ package com.example.bonushomeworkmahmmed;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -17,7 +19,7 @@ import android.widget.TextView;
 public class WorkDetailFragment extends Fragment {
 
 
-    private int workoutId;
+    private long workoutId;
 
     public WorkDetailFragment() {
         // Required empty public constructor
@@ -27,8 +29,9 @@ public class WorkDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout-normal for this fragment
         return inflater.inflate(R.layout.fragment_work_detail, container, false);
+
     }
 
     @Override
@@ -38,13 +41,28 @@ public class WorkDetailFragment extends Fragment {
         if(view != null){
             TextView name = (TextView) view.findViewById(R.id.textWorkoutTitle);
             TextView description = (TextView) view.findViewById(R.id.textWorkoutDescription);
-            Workout workout = Workout.workouts[workoutId];
+            Workout workout = Workout.workouts[(int) workoutId];
             name.setText(workout.getName());
             description.setText(workout.getDescription());
         }
     }
 
-    public void setWorkoutId(int workoutId) {
+    public void setWorkoutId(long workoutId) {
         this.workoutId = workoutId;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putLong("workoutId", workoutId);
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if(savedInstanceState != null){
+            workoutId = savedInstanceState.getLong("workoutId");
+        }
     }
 }

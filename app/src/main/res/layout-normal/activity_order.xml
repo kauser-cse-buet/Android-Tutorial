@@ -9,7 +9,7 @@
     tools:context=".OrderActivity"
     android:id="@+id/coordinator">
 <!--    <include-->
-<!--        layout="@layout/toolbar_main"-->
+<!--        layout-normal="@layout-normal/toolbar_main"-->
 <!--        android:id="@+id/toolbar" />-->
 
     <com.google.android.material.appbar.AppBarLayout

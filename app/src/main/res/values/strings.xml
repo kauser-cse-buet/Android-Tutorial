@@ -29,13 +29,13 @@
     <string name="create_order">Create Order</string>
     <string name="create_order_title">Create Order</string>
     <string name="action_share">Share</string>
-    <string name="buttonLecture8">Lecture 8</string>
+    <string name="buttonLecture8">Lecture 8, 9</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="workout_title">Workout Title</string>
     <string name="workout_description">Workout Description</string>
-    <string name="buttonLecture10">Lecture 10</string>
+    <string name="buttonLecture10">Lecture 10, 11</string>
 
     <string name="home_tab">Home</string>
     <string name="pizza_tab">Pizzas</string>

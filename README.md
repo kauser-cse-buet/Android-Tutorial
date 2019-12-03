@@ -53,6 +53,7 @@
 - coordinating between fragment.
 
 # Lecture 9
+- Implemented support for different layout for different devices (tablet, phone).
 
 # Lecture 10
 - Implemented swipe and tab using fragment.
